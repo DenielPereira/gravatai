@@ -1,0 +1,352 @@
+.hero
+  height: 100vh
+  color: $white
+  position: relative
+  background-color: transparentize($black, .4)
+  #bg_video
+    position: fixed
+    right: 0
+    bottom: 0
+    min-width: 100%
+    min-height: 100%
+    z-index: -1
+    background-image: url('../img/hero_bg.png')
+    background-size: contain
+    background-repeat: no-repeat
+    background-color: $black
+
+  // @media only screen and (max-width: 992px)
+  //   border-bottom-left-radius: 50px 
+  //   border-bottom-right-radius: 50px 
+  .navbar-fixed
+    @extend %navbar
+  .heading
+    @extend %heading
+    @media only screen and (max-width: 992px)
+      .row
+        .col
+          h2 
+            text-align: center
+          p
+            display: none
+      .profile
+        display: none !important
+  .bubbles
+    @extend %bubbles !optional
+    @media only screen and (max-width: 992px)
+      display: none
+  .bottom-right
+    @media only screen and (max-width: 992px)
+      display: none
+    .bubble-content
+      @media only screen and (max-width: 992px)
+        display: none
+      .download-links
+        display: flex
+        flex-direction: row
+        justify-content: space-around
+        align-content: center
+        .store
+          @extend %store !optional
+    .background
+      z-index: -1
+
+.resume
+  height: unset
+  position: relative
+  background-color: $white
+  padding-top: $space-1
+  @media only screen and (min-width: 1400px)
+    height: 50vh
+  .heading
+    width: 90%
+    margin: 0 auto
+    color: $black
+    h1
+      font-size: 30px
+      @media only screen and (max-width: 992px)
+        font-size: 24px
+      span 
+        font-size: 42px
+        @media only screen and (max-width: 992px)
+          font-size: 24px
+  .section-text
+    @media only screen and (max-width: 992px)
+      padding-bottom: $space-5
+    @extend %section-text
+    color: $black
+    text-align: left
+    h2 
+      color: $black
+    p
+      color: $black
+      @media only screen and (max-width: 992px)
+        font-size: 16px
+        font-weight: normal
+    @media only screen and (min-width: 1400px)
+      margin-left: 20%
+
+.services
+  height: 80vh
+  background-color: $white
+  display: flex
+  justify-content: center
+  flex-direction: column
+  align-items: center
+  @media only screen and (max-width: 992px)
+    display: none
+  h1
+    margin: 0
+  .services_grid
+    margin-top: $space-4
+    width: 80%
+    .row
+      .col
+        padding: 0
+        .item-top
+          padding-bottom: 20px 
+        .item-bottom
+          padding-top: 20px 
+          align-self: flex-end
+        .icon
+          i 
+            font-size: 50px
+            color: #c4c4c4
+        .info
+          p 
+            font-weight: 500
+        hr 
+          border: 1.5px solid #f4f4f4
+          width: 100%
+      .left-col
+        justify-content: flex-start
+        border-right: 3px solid #f4f4f4
+      .center-col
+        justify-content: center
+        .icon
+          text-align: center
+        p 
+          text-align: center
+      .right-col
+        justify-content: flex-end
+        border-left: 3px solid #f4f4f4
+        .icon
+          text-align: right
+        p 
+          text-align: right
+
+.spacer
+  background-color: $white
+  .primary-spacer
+    border: 1.5px solid $primary
+    margin: 0
+    width: 60%
+    margin: 0 auto
+    align-self: center
+
+.text-slider
+  background-color: $white
+  height: 60vh
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  @media only screen and (max-width: 992px)
+    height: unset
+
+  .slider-container
+    width: 80%
+    margin: 0 auto
+    p
+      margin: 0
+      text-align: center
+  .mySlides
+    @media only screen and (max-width: 992px)
+      padding: 45px
+      p
+        font-size: 14px
+  .dot-container
+    @media only screen and (max-width: 992px)
+      display: none 
+   
+
+.schema
+  background-color: #d9d9d9
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 80vh
+  @media only screen and (max-width: 992px)
+    display: none
+  img 
+    height: 400px
+
+.testimonials
+  height: 85vh
+  width: 100%
+  background-color: $black
+  @media only screen and (max-width: 992px)
+    height: unset
+
+  .heading
+    width: 100%
+    padding-right: 5%
+    text-align: right
+    padding-top: $space-5
+    padding-bottom: $space-4
+    background-image: url('../img/svg/Rectangle.svg')
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: bottom
+    background-color: #d9d9d9
+    @media only screen and (max-width: 992px)
+      background-image: unset
+      background-color: $black
+
+    h1
+      font-size: 42px
+      margin: 0
+      color: $white
+      span
+        @media only screen and (max-width: 992px)
+          font-size: 24px
+        &:last-child 
+          font-size: 30px
+          @media only screen and (max-width: 992px)
+            font-size: 24px
+          
+  .card
+    min-height: 350px
+    @media only screen and (max-width: 992px)
+      margin: $space-1 0
+  .testimonial
+    color: $white
+    q 
+      font-size: 14px
+    &.right
+      text-align: right
+  .witness
+    color: $white
+    display: flex
+    align-self: flex-start
+    padding-top: $space-1
+    @media only screen and (max-width: 992px)
+      padding-top: $space-2
+    &.right
+      flex-direction: row-reverse
+      align-self: flex-end
+      .witness_data
+        text-align: right
+        align-items: flex-end
+        margin-right: $space-1
+    .witness_photo
+      img
+        height: 50px
+        border-radius: 50%
+    .witness_data
+      margin-left: $space-1
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      justify-content: center
+      height: 50px
+      .name
+        font-weight: 500
+      .job
+        font-size: 14px
+
+.contact
+  background-color: $black
+  color: $white
+  height: 70vh
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  @media only screen and (max-width: 992px)
+    height: unset
+  h1 
+    text-align: center
+    margin: 0
+    padding-bottom: $space-4
+  form
+    .input-field
+      display: flex
+      align-items: center
+      justify-content: center
+    .button
+      width: 100%
+      display: flex
+      .btn
+        width: 60%
+        text-align: center
+        margin: 0 auto
+
+.footer
+  height: 45vh
+  display: block
+  background-color: $black
+  color: $white
+  position: relative
+  @media only screen and (max-width: 992px)
+    height: unset
+    position: relative
+  @media only screen and (max-height: 425px)
+    height: 100vh
+    position: relative
+
+  .footer-content
+    height: 100%
+    width: 90%
+    margin: 0 auto
+    display: flex
+    align-items: center
+    justify-content: space-between
+    @media only screen and (max-width: 992px)
+      flex-direction: column
+    .footer-left
+      align-self: flex-end
+      margin-bottom: $space-3
+      img 
+        @media only screen and (max-width: 992px)
+          display: none
+      p 
+        color: $gray
+        margin: $space-1 0 0 0
+        font-size: 14px
+        @media only screen and (max-width: 992px)
+          position: absolute
+          bottom: $space-1
+          left: 0
+          right: 0
+          text-align: center
+          margin-top: $space-3
+    .footer-right
+      text-align: right
+      align-self: flex-end
+      margin-bottom: $space-3
+      @media only screen and (max-width: 992px)
+        margin-bottom: $space-8
+      .address
+        li 
+          font-weight: 500
+          margin-bottom: $space-1 / 2
+          &:last-child
+            margin-bottom: 0
+          a 
+            color: $white 
+            &:hover
+              color: $primary
+      .social
+        display: none
+        a
+          text-decoration: none
+          color: unset
+          margin-right: $space-2
+          &:last-child
+            margin-right: 0
+        .fab, .fal
+          font-weight: 500
+          font-size: 1.2em
+          &:hover
+            color: $primary

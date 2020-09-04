@@ -1,0 +1,56 @@
+%input-grouped
+  display: block
+  width: 100%
+  height: 36px
+  padding: 0 $space-3
+  font-size: 1rem
+  line-height: 36px
+  color: $black
+  border: 1px solid transparentize($black, .5)
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out
+  flex-grow: 2
+  border-top-left-radius: 8px
+  border-bottom-left-radius: 8px
+  background-color: #1B1A1A
+  color: $black
+  font-weight: 500
+  border-right: none 
+  &::placeholder
+    color: lighten($black, 40)
+    font-size: 14px
+    font-weight: normal
+  &:focus
+    outline: 0 !important
+    box-shadow: none !important
+
+.label
+  background-color: transparent !important
+  text-align: left !important
+  font-weight: 500
+  margin-left: $space-10 * 2
+  @media only screen and (max-width: 992px)
+    margin-left: 15%
+    width: unset !important
+
+.form-input
+  color: #fff
+  font-family: inherit !important
+  background-color: #1B1A1A
+  border: 1px solid #1B1A1A
+  border-radius: 4px
+  outline: none
+  height: 2.5rem
+  width: 65%
+  font-size: 16px
+  margin: 0 0 8px 0
+  // padding: 0 0 0 10px
+  padding: inherit
+  box-sizing: content-box
+  transition: box-shadow .3s, border .3s
+  line-height: 2.5em
+  @media only screen and (max-width: 992px)
+    width: 70%
+
+  &:focus
+    border: 1px solid #1B1A1A !important
+    box-shadow: inset 4px 4px 10px -2px rgba(0,0,0,0.25) !important

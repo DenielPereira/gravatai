@@ -1,0 +1,45 @@
+%bubble  
+  height: 500px
+  width: 50%
+  position: absolute
+  bottom: 0
+  right: 0
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  z-index: 9999
+  background-image: url('../img/svg/bubble.svg')
+  background-size: cover
+  background-repeat: no-repeat
+  @media only screen and (min-width: 1400px)
+    height: 700px
+  .bubble-content
+    margin-top: $space-10 * 3
+    margin-left: $space-10 * 3
+    h1
+      font-size: 2.5em
+      font-weight: 500
+      color: $secondary
+      text-align: center
+      letter-spacing: -2px
+      margin-bottom: $space-2
+
+%bubble-blue  
+  height: 500px
+  width: 50.1%
+  position: absolute
+  top: -1px
+  left: 0
+  background-image: url('../img/svg/upsidedown-bubble.svg')
+  background-size: contain
+  background-repeat: no-repeat
+  z-index: -1
+  @media only screen and (min-width: 1400px)
+    height: 680px
+
+%bubbles
+  position: absolute
+  bottom: 20px
+  right: 180px
+  height: 80vh
