@@ -2,7 +2,9 @@
   display: flex
   justify-content: center
   align-items: center
-  padding-top: $space-2
+  padding: $space-2 0
+  border-bottom: 2px solid $primary
+  height: 80px
   @media screen and (max-width: 992px)
     position: absolute
     top: 0
@@ -11,7 +13,7 @@
   .navbar
     background-color: transparent
     box-shadow: none
-    width: 90%
+    //width: 90%
     position: relative
     @media screen and (max-width: 992px)
       height: fit-content
@@ -22,7 +24,9 @@
         align-items: center
         justify-content: center
     .brand-logo
-      margin-right: $space-5
+      margin-left: $space-5
+      img
+        height: 60px 
       @media screen and (max-width: 992px)
         display: flex
         align-items: center
@@ -30,14 +34,26 @@
         justify-self: center
         margin: 0
         margin-top: $space-3
-    ul 
+    ul
+
+      li
+        &:first-child
+          border-left: 1px solid transparentize($gray, .8)
+        &.icon
+          border-left: 1px solid transparentize($gray, .8)
+
       a
-        color: $white
+        color: $secondary
         transition: .3s 
-        border-bottom: 1px solid transparent
         height: $space-8
-        font-weight: 500
+        font-weight: 400
+        font-size: 14px
+        letter-spacing: 1.5px
+        padding: 0 $space-3
         &:hover
           color: $primary
+
         &:last-child
           height: unset
+      .icon
+        

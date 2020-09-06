@@ -2,22 +2,7 @@
   height: 100vh
   color: $white
   position: relative
-  background-color: transparentize($black, .4)
-  #bg_video
-    position: fixed
-    right: 0
-    bottom: 0
-    min-width: 100%
-    min-height: 100%
-    z-index: -1
-    background-image: url('../img/hero_bg.png')
-    background-size: contain
-    background-repeat: no-repeat
-    background-color: $black
-
-  // @media only screen and (max-width: 992px)
-  //   border-bottom-left-radius: 50px 
-  //   border-bottom-right-radius: 50px 
+  background-color: white
   .navbar-fixed
     @extend %navbar
   .heading
@@ -31,23 +16,6 @@
             display: none
       .profile
         display: none !important
-  .bubbles
-    @extend %bubbles !optional
-    @media only screen and (max-width: 992px)
-      display: none
-  .bottom-right
-    @media only screen and (max-width: 992px)
-      display: none
-    .bubble-content
-      @media only screen and (max-width: 992px)
-        display: none
-      .download-links
-        display: flex
-        flex-direction: row
-        justify-content: space-around
-        align-content: center
-        .store
-          @extend %store !optional
     .background
       z-index: -1
 
