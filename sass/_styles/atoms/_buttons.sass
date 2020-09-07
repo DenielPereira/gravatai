@@ -60,13 +60,30 @@
   box-shadow: none
   border: 1.5px solid $primary
   background-color: transparent !important
-
   i
     font-size: 1.3em
   &:hover
     box-shadow: 1px 1px 8px -1px transparentize($primary, 0.5)
   &:focus
     box-shadow: 0 0 0 2px transparentize($primary, 0.5) !important
+    background-color: transparent !important
+
+.btn-play
+  width: $space-6
+  height: $space-6
+  line-height: $space-4
+  padding: 0
+  text-align: center
+  box-shadow: none
+  border: 1.5px solid $primary
+  background-color: transparent !important
+  i
+    font-size: 1.3em
+  &:hover
+    box-shadow: 1px 1px 8px -1px transparentize($primary, 0.5)
+    box-shadow: 0 0 0 2px transparentize($primary, 0.5) !important
+  &:focus
+    box-shadow: 0 0 0 4px transparentize($primary, 0.5) !important
     background-color: transparent !important
 
 %btn-grouped

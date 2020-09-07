@@ -5,7 +5,11 @@
 		background-repeat: no-repeat
 		background-position-y: 10%
 		background-size: cover
-		&::before
+		position: relative
+		display: flex
+		justify-content: center
+		align-items: center
+		&::after
 			content: ''
 			position: absolute
 			left: 0
@@ -13,6 +17,48 @@
 			right: 0
 			bottom: 0
 			opacity: 1
-			background-color: transparentize($black, .8)
-			
-			
+			background-color: transparentize($white, .95)
+		.btn-play
+			color: $white
+			width: 120px
+			height: 120px
+			border-radius: 120px
+			border-width: 3px
+			display: flex
+			align-items: center
+			justify-content: center
+			flex-direction: column
+			z-index: 10
+			text-align: center
+			&:hover, &:focus
+				p, i
+					color: $primary
+			p
+				margin: 0
+				padding: 0
+				letter-spacing: 1.5px
+				font-size: 15px
+			i 
+				font-size: 40px
+		.btn-outline
+			position: absolute
+			top: $space-3
+			right: $space-6
+			color: $white
+			line-height: 2.3em
+			z-index: 10
+			i 
+				margin-right: $space-2
+				color: $primary
+	.card
+		background-color: transparent
+		transform: translateY(-40%)
+		margin-left: 20%
+		.movie-card
+			width: 170px
+			height: 250px
+			background-image: url('../img/vingadores-capa.jpg')
+			background-size: cover
+			background-repeat: no-repeat
+			border-radius: 8px
+			box-shadow: 4px 5px 16px -1px rgba(0, 0, 0, 0.35)	

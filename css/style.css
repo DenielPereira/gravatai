@@ -92,6 +92,24 @@ button {
     box-shadow: 0 0 0 2px rgba(204, 51, 0, 0.5) !important;
     background-color: transparent !important; }
 
+.btn-play {
+  width: 48px;
+  height: 48px;
+  line-height: 32px;
+  padding: 0;
+  text-align: center;
+  box-shadow: none;
+  border: 1.5px solid #cc3300;
+  background-color: transparent !important; }
+  .btn-play i {
+    font-size: 1.3em; }
+  .btn-play:hover {
+    box-shadow: 1px 1px 8px -1px rgba(204, 51, 0, 0.5);
+    box-shadow: 0 0 0 2px rgba(204, 51, 0, 0.5) !important; }
+  .btn-play:focus {
+    box-shadow: 0 0 0 4px rgba(204, 51, 0, 0.5) !important;
+    background-color: transparent !important; }
+
 .input-group .btn-grouped {
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -389,8 +407,12 @@ button {
   background-image: url("../img/vingadores.jpg");
   background-repeat: no-repeat;
   background-position-y: 10%;
-  background-size: cover; }
-  .cinema .banner::before {
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .cinema .banner::after {
     content: "";
     position: absolute;
     left: 0;
@@ -398,6 +420,49 @@ button {
     right: 0;
     bottom: 0;
     opacity: 1;
-    background-color: rgba(0, 0, 0, 0.2); }
+    background-color: rgba(255, 255, 255, 0.05); }
+  .cinema .banner .btn-play {
+    color: #ffffff;
+    width: 120px;
+    height: 120px;
+    border-radius: 120px;
+    border-width: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 10;
+    text-align: center; }
+    .cinema .banner .btn-play:hover p, .cinema .banner .btn-play:hover i, .cinema .banner .btn-play:focus p, .cinema .banner .btn-play:focus i {
+      color: #cc3300; }
+    .cinema .banner .btn-play p {
+      margin: 0;
+      padding: 0;
+      letter-spacing: 1.5px;
+      font-size: 15px; }
+    .cinema .banner .btn-play i {
+      font-size: 40px; }
+  .cinema .banner .btn-outline {
+    position: absolute;
+    top: 24px;
+    right: 48px;
+    color: #ffffff;
+    line-height: 2.3em;
+    z-index: 10; }
+    .cinema .banner .btn-outline i {
+      margin-right: 16px;
+      color: #cc3300; }
+.cinema .card {
+  background-color: transparent;
+  transform: translateY(-40%);
+  margin-left: 20%; }
+  .cinema .card .movie-card {
+    width: 170px;
+    height: 250px;
+    background-image: url("../img/vingadores-capa.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    box-shadow: 4px 5px 16px -1px rgba(0, 0, 0, 0.35); }
 
 /*# sourceMappingURL=style.css.map */
