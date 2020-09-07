@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap");
 * {
   transition: all 0.2s ease-in-out;
@@ -264,6 +265,38 @@ button {
   padding: 2px;
   border-radius: 8px;
   background-color: transparent; }
+
+.slick-prev {
+  border: 1.5px solid #cc3300;
+  background-color: transparent;
+  color: #cc3300;
+  border-radius: 32px;
+  height: 32px;
+  width: 40px; }
+  .slick-prev:focus {
+    background-color: #cc3300; }
+  .slick-prev:focus-within::before {
+    color: #ffffff; }
+  .slick-prev::before {
+    color: #cc3300;
+    font-family: "Font Awesome 5 Pro";
+    content: ""; }
+
+.slick-next {
+  border: 1.5px solid #cc3300;
+  background-color: transparent;
+  color: #cc3300;
+  border-radius: 32px;
+  height: 32px;
+  width: 40px; }
+  .slick-next:focus {
+    background-color: #cc3300; }
+  .slick-next:focus-within::before {
+    color: #ffffff; }
+  .slick-next::before {
+    color: #cc3300;
+    font-family: "Font Awesome 5 Pro";
+    content: ""; }
 
 .hero .navbar-fixed {
   display: flex;
