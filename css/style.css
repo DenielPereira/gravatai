@@ -22,27 +22,6 @@ body {
 button {
   font: inherit !important; }
 
-.bg-gradient-primary {
-  background-image: linear-gradient(to bottom, #004a8d, #053973, #042959, #011a41); }
-
-.bg-gradient-primary-2 {
-  background-image: linear-gradient(to top, #1e90e7 27.1%, #4365e1 77.8%); }
-
-.bg-gradient-primary-3 {
-  background-image: radial-gradient(circle farthest-corner at 270%, #37d1ff 0%, #0e1f6f 100.2%); }
-
-.bg-white {
-  background-image: url("../img/svg/bg-white.svg");
-  background-position-y: -40%;
-  background-repeat: no-repeat;
-  background-size: cover; }
-  @media only screen and (min-width: 1400px) {
-    .bg-white {
-      background-position-y: -20%; } }
-
-.text-primary {
-  color: #D41E22; }
-
 .btn {
   border: none;
   border-radius: 32px;
@@ -82,16 +61,6 @@ button {
   .btn-white:focus {
     background-color: #e6e6e6;
     box-shadow: none; }
-
-.btn-primary {
-  background: linear-gradient(108.43deg, #DD4718 0%, #D51E22 100%);
-  color: #ffffff !important;
-  transition: all 0.2s ease-in-out; }
-  .btn-primary:hover {
-    background-color: #b82e00; }
-  .btn-primary:focus {
-    background-color: #b32d00;
-    box-shadow: inset 1px 1px 8px -1px rgba(0, 0, 0, 0.5); }
 
 .btn-outline {
   background-color: transparent;
@@ -155,52 +124,6 @@ button {
   border-radius: 4px;
   padding: 24px 32px;
   box-shadow: 2px 2px 10px -2px rgba(0, 0, 0, 0.2); }
-
-.plan-card {
-  width: 25%;
-  height: 60%;
-  align-items: flex-start; }
-  @media only screen and (max-width: 992px) {
-    .plan-card {
-      width: 80%;
-      align-items: center; } }
-  .plan-card .card-title {
-    text-align: left;
-    margin-bottom: 16px; }
-    .plan-card .card-title h1 {
-      margin: 0; }
-  .plan-card .price-stripped {
-    color: #5d5d5d; }
-    .plan-card .price-stripped small {
-      font-size: 1em;
-      text-decoration: line-through;
-      font-weight: 500; }
-  .plan-card .price {
-    color: #cc3300;
-    margin-bottom: 8px; }
-    .plan-card .price h2 {
-      margin: 0; }
-      .plan-card .price h2 small {
-        font-size: 0.6em; }
-  .plan-card .description {
-    color: #8C8C8C;
-    margin-bottom: 16px; }
-    .plan-card .description p {
-      margin: 0; }
-  .plan-card .list {
-    color: #8C8C8C;
-    margin-bottom: 8px; }
-    .plan-card .list ul li {
-      list-style: none;
-      margin-bottom: 4px; }
-  .plan-card .card-button {
-    margin-top: 16px; }
-    @media only screen and (max-width: 992px) {
-      .plan-card .card-button {
-        align-self: center; } }
-    .plan-card .card-button .btn {
-      border-radius: 4px;
-      font-weight: 400; }
 
 .input-group .input-grouped {
   display: block;
@@ -460,5 +383,21 @@ button {
             .footer .footer-content .links .row .right-side button i {
               color: #cc3300;
               margin-left: 4px; }
+
+.cinema .banner {
+  height: 60vh;
+  background-image: url("../img/vingadores.jpg");
+  background-repeat: no-repeat;
+  background-position-y: 10%;
+  background-size: cover; }
+  .cinema .banner::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.2); }
 
 /*# sourceMappingURL=style.css.map */
