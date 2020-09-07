@@ -315,6 +315,78 @@ button {
   color: #ffffff;
   position: relative;
   background-color: white; }
+  .hero .carousel .carousel-item {
+    height: calc(100vh - 80px); }
+  .hero .carousel .carousel-indicators li {
+    width: 80px;
+    background-color: #ffffff;
+    opacity: 1; }
+    .hero .carousel .carousel-indicators li.active {
+      background-color: #cc3300; }
+  .hero .carousel .carousel-control-prev, .hero .carousel .carousel-control-next {
+    opacity: 1; }
+    .hero .carousel .carousel-control-prev .carousel-control-prev-icon, .hero .carousel .carousel-control-next .carousel-control-prev-icon {
+      opacity: 1;
+      border: 2px solid #ffffff;
+      height: 40px;
+      width: 40px;
+      line-height: 35px;
+      z-index: 10;
+      background-image: none; }
+      .hero .carousel .carousel-control-prev .carousel-control-prev-icon:hover, .hero .carousel .carousel-control-next .carousel-control-prev-icon:hover {
+        background-color: #cc3300;
+        border-color: #cc3300; }
+      .hero .carousel .carousel-control-prev .carousel-control-prev-icon::before, .hero .carousel .carousel-control-next .carousel-control-prev-icon::before {
+        color: #ffffff;
+        font-family: "Font Awesome 5 Pro";
+        content: ""; }
+    .hero .carousel .carousel-control-prev .carousel-control-next-icon, .hero .carousel .carousel-control-next .carousel-control-next-icon {
+      opacity: 1;
+      border: 2px solid #ffffff;
+      height: 40px;
+      width: 40px;
+      line-height: 35px;
+      z-index: 10;
+      background-image: none; }
+      .hero .carousel .carousel-control-prev .carousel-control-next-icon:hover, .hero .carousel .carousel-control-next .carousel-control-next-icon:hover {
+        background-color: #cc3300;
+        border-color: #cc3300; }
+      .hero .carousel .carousel-control-prev .carousel-control-next-icon::before, .hero .carousel .carousel-control-next .carousel-control-next-icon::before {
+        color: #ffffff;
+        font-family: "Font Awesome 5 Pro";
+        content: ""; }
+
+.cinema {
+  height: 100vh; }
+  .cinema .title {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 8px; }
+  .cinema .subtitle {
+    text-align: center;
+    margin: 0; }
+  .cinema .movies {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    margin-top: 40px; }
+    .cinema .movies .movie-card {
+      text-align: center;
+      width: 200px;
+      height: 280px;
+      border-radius: 10px;
+      box-shadow: 2px 2px 8px -1px rgba(0, 0, 0, 0.35); }
+      .cinema .movies .movie-card .movie {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px; }
+      .cinema .movies .movie-card .movie-title {
+        margin-top: 8px;
+        text-transform: uppercase; }
+
+.services {
+  height: 100vh;
+  background-color: #8C8C8C; }
 
 .footer {
   height: 50vh;
