@@ -310,6 +310,10 @@ button {
   .slick-disabled::before {
     color: rgba(204, 51, 0, 0.2); }
 
+.slick-slide:focus {
+  border: 0;
+  outline: 0; }
+
 .hero .navbar-fixed {
   display: flex;
   justify-content: center;
