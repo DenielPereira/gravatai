@@ -114,8 +114,9 @@
 }
 
 .slick-slide {
-    margin: 10px 20px;
-    transform: translateY(10px);
+    margin: 10px 10px;
+    //transform: translateY(10px);
+    transform: scale(0.9);
 }
 
 .slick-slide img {
@@ -137,6 +138,8 @@
 }
 
 .slick-center{
-    transform: scale(1.1) 
-               translateY(10px);
+    transform: scale(1.01);
+    .movie{
+        opacity: 1 !important;
+    }
 }

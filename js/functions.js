@@ -3,7 +3,7 @@ $(document).ready(function(){
   //Configurações do carousel dos filmes
   $('.movies').slick({
     centerMode: true,
-    centerPadding: '60px',
+    centerPadding: 0,
     slidesToShow: 5,
     slidesToScroll: 1,
     focusOnSelect: true,

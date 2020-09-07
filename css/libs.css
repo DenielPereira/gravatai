@@ -10875,8 +10875,8 @@ readers do not read off random characters that represent icons */
   margin: 100px auto; }
 
 .slick-slide {
-  margin: 10px 20px;
-  transform: translateY(10px); }
+  margin: 10px 10px;
+  transform: scale(0.9); }
 
 .slick-slide img {
   width: 100%; }
@@ -10892,6 +10892,8 @@ readers do not read off random characters that represent icons */
   transition: none; }
 
 .slick-center {
-  transform: scale(1.1) translateY(10px); }
+  transform: scale(1.01); }
+  .slick-center .movie {
+    opacity: 1 !important; }
 
 /*# sourceMappingURL=libs.css.map */
