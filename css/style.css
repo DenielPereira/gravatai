@@ -18,6 +18,9 @@ body {
 .row {
   margin-bottom: 0 !important; }
 
+button {
+  font: inherit !important; }
+
 .bg-gradient-primary {
   background-image: linear-gradient(to bottom, #004a8d, #053973, #042959, #011a41); }
 
@@ -345,32 +348,34 @@ body {
       letter-spacing: 3.5px;
       font-size: 18px;
       text-align: center; }
-    .footer .footer-content .carousel .row {
-      display: flex;
-      align-items: center;
-      justify-content: center; }
-      .footer .footer-content .carousel .row .col .item {
-        text-align: center;
-        margin-right: 16px;
-        padding: 0 16px; }
-        .footer .footer-content .carousel .row .col .item .icon {
-          color: #cc3300;
-          font-size: 40px;
-          margin-bottom: 8px; }
-        .footer .footer-content .carousel .row .col .item .item-title {
-          font-weight: 700;
-          color: #000;
-          margin-bottom: 8px; }
-        .footer .footer-content .carousel .row .col .item .desc {
-          font-size: 14px; }
-          .footer .footer-content .carousel .row .col .item .desc p {
-            margin: 0; }
+    .footer .footer-content .carousel {
+      margin-bottom: 40px; }
+      .footer .footer-content .carousel .row {
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .footer .footer-content .carousel .row .col .item {
+          text-align: center;
+          margin-right: 16px;
+          padding: 0 16px; }
+          .footer .footer-content .carousel .row .col .item .icon {
+            color: #cc3300;
+            font-size: 40px;
+            margin-bottom: 8px; }
+          .footer .footer-content .carousel .row .col .item .item-title {
+            font-weight: 700;
+            color: #000;
+            margin-bottom: 8px; }
+          .footer .footer-content .carousel .row .col .item .desc {
+            font-size: 14px; }
+            .footer .footer-content .carousel .row .col .item .desc p {
+              margin: 0; }
     .footer .footer-content .links {
       border-top: 1px solid rgba(66, 63, 64, 0.1);
       margin: 16px 0;
       margin-bottom: 80px; }
       .footer .footer-content .links .row {
-        margin-top: 24px; }
+        margin-top: 32px; }
         .footer .footer-content .links .row .left-side .col a {
           display: list-item;
           list-style: none;
