@@ -272,7 +272,8 @@ button {
   color: #cc3300;
   border-radius: 32px;
   height: 32px;
-  width: 40px; }
+  width: 40px;
+  cursor: pointer; }
   .slick-prev:focus {
     background-color: #cc3300; }
   .slick-prev:focus-within::before {
@@ -288,7 +289,8 @@ button {
   color: #cc3300;
   border-radius: 32px;
   height: 32px;
-  width: 40px; }
+  width: 40px;
+  cursor: pointer; }
   .slick-next:focus {
     background-color: #cc3300; }
   .slick-next:focus-within::before {
@@ -297,6 +299,16 @@ button {
     color: #cc3300;
     font-family: "Font Awesome 5 Pro";
     content: ""; }
+
+.slick-disabled {
+  border: 1.5px solid rgba(204, 51, 0, 0.2);
+  cursor: default; }
+  .slick-disabled:focus {
+    background-color: transparent; }
+  .slick-disabled:focus-within::before {
+    color: rgba(204, 51, 0, 0.2); }
+  .slick-disabled::before {
+    color: rgba(204, 51, 0, 0.2); }
 
 .hero .navbar-fixed {
   display: flex;

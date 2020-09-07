@@ -5,6 +5,7 @@
     border-radius: 32px
     height: 32px
     width: 40px
+    cursor: pointer
     &:focus
         background-color: $primary
     &:focus-within::before
@@ -21,6 +22,7 @@
     border-radius: 32px
     height: 32px
     width: 40px
+    cursor: pointer
     &:focus
         background-color: $primary
     &:focus-within::before
@@ -29,3 +31,13 @@
         color: $primary
         font-family: "Font Awesome 5 Pro"   
         content: "\f061"
+
+.slick-disabled
+    border: 1.5px solid transparentize($primary, .8)
+    cursor: default
+    &:focus
+        background-color: transparent
+    &:focus-within::before
+        color: transparentize($primary, .8)
+    &::before
+        color: transparentize($primary, .8)
