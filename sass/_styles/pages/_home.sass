@@ -49,7 +49,7 @@
           content: "\f054"
 
 .cinema
-  height: 80vh
+  height: 100vh
   .title
     text-align: center
     font-size: 40px
@@ -98,10 +98,54 @@
         color: $primary
         margin-right: $space-1
 
-.services
+.alimentacao
   height: 100vh  
-  margin-top: $space-10 
-
+  .title
+    text-align: center
+    font-size: 40px
+    margin-bottom: $space-1 
+  .subtitle
+    text-align: center
+    margin: 0
+  .food-stores
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-top: $space-3
+    .slick-prev
+      margin-left: $space-4
+    .slick-next
+      margin-right: $space-4
+    .store-card
+      text-align: center
+      width: 150px 
+      height: 150px
+      border-radius: 150px
+      box-shadow: 2px 2px 8px -1px rgba(0, 0, 0, 0.35)	
+      .store
+        width: 100%
+        height: 100%
+        border-radius: 150px
+        position: relative
+      .store-title
+        margin-top: $space-1
+        text-transform: uppercase
+        z-index: 10
+  .container
+    width: 90%
+    display: flex
+    align-items: center
+    justify-content: center
+    border: 2px solid transparentize($gray, .85)
+    border-right: none
+    border-left: none
+    padding: $space-4
+    margin-top: $space-2
+    .btn
+      align-self: center
+      i
+        color: $primary
+        margin-right: $space-1
 .footer
   height: 50vh
   display: block

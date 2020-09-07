@@ -7,6 +7,7 @@ $(document).ready(function(){
     slidesToShow: 5,
     slidesToScroll: 1,
     focusOnSelect: true,
+    adaptiveHeight: true,
     responsive: [
       {
         breakpoint: 768,
@@ -27,6 +28,14 @@ $(document).ready(function(){
         }
       }
     ]
+  });
+
+  //Configurações do carousel das lojas de alimentação
+  $('.food-stores').slick({
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    variableWidth: true
   });
 
   //Configurações do carousel do footer
