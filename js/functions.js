@@ -32,10 +32,26 @@ $(document).ready(function(){
 
   //Configurações do carousel das lojas de alimentação
   $('.food-stores').slick({
-    infinite: true,
+    infinite: false,
     slidesToShow: 4,
     slidesToScroll: 1,
-    variableWidth: true
+    adaptiveHeight: true
+  });
+
+  //Configurações do carousel de novidades
+  $('.news-container').slick({
+    infinite: false,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    adaptiveHeight: true
+  });
+
+  //Configurações do carousel do instagram
+  $('.photos-container').slick({
+    infinite: false,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    adaptiveHeight: true
   });
 
   //Configurações do carousel do footer
