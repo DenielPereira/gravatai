@@ -46,14 +46,6 @@ $(document).ready(function(){
     adaptiveHeight: true
   });
 
-  //Configurações do carousel do instagram
-  $('.photos-container').slick({
-    infinite: false,
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    adaptiveHeight: true
-  });
-
   //Configurações do carousel do footer
   $('.slick').slick({
     infinite: false,
