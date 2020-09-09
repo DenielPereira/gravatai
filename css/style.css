@@ -640,6 +640,10 @@ button {
           margin-top: 8px; }
         .footer .footer-content .links .row .right-side {
           float: right; }
+          @media only screen and (max-height: 425px) {
+            .footer .footer-content .links .row .right-side {
+              display: flex;
+              flex-direction: column; } }
           .footer .footer-content .links .row .right-side .col {
             margin-right: 24px; }
             .footer .footer-content .links .row .right-side .col:last-child {

@@ -341,6 +341,9 @@
               margin-top: $space-1
         .right-side
           float: right
+          @media only screen and (max-height: 425px)
+            display: flex
+            flex-direction: column
           .col
             margin-right: $space-3
             &:last-child

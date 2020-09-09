@@ -10,6 +10,15 @@ $(document).ready(function(){
     adaptiveHeight: true,
     responsive: [
       {
+        breakpoint: 992,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 3
+        }
+      },
+      {
         breakpoint: 768,
         settings: {
           arrows: false,
@@ -35,7 +44,36 @@ $(document).ready(function(){
     infinite: false,
     slidesToShow: 4,
     slidesToScroll: 1,
-    adaptiveHeight: true
+    adaptiveHeight: true,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 1
+        }
+      }
+    ]
   });
 
   //Configurações do carousel de novidades
@@ -43,14 +81,72 @@ $(document).ready(function(){
     infinite: false,
     slidesToShow: 3,
     slidesToScroll: 1,
-    adaptiveHeight: true
+    adaptiveHeight: true,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 1
+        }
+      }
+    ]
   });
 
   //Configurações do carousel do footer
   $('.slick').slick({
     infinite: false,
     slidesToShow: 4,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 1
+        }
+      }
+    ]
   });
 
   //Limpa o texto dos botões 'next' e 'previous'
